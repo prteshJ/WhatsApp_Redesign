@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Whatsapp Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+</head>
+
+<body>
+    <!-- Create header section for menu -->
+    <header class="header bg-light border-bottom p-1">
+        <div class="container-fluid pl-0">
+            <nav class="nav">
+                <a class="nav-link" href="editProfileView.html">Profile</a>
+                <a class="nav-link active" href="chatView.html">Chats</a>
+                <a class="nav-link" href="index.html">Inbox</a>
+            </nav>
+        </div>
+    </header>
+    <!--  Create chat header -->
+    <div class="container-fluid shadow-sm pb-1 bg-white">
+        <div class="my-2 row">
+            <div class="pl-3 pr-2 d-flex align-self-center col-1">
+                <i class="fas fa-chevron-left chevronText fa-1x"></i>
+            </div>
+            <div class="px-2 row" style="width: 80%;">
+                <img src="https://placeimg.com/45/45/any" alt="A random image appears here" class="d-block img-fluid px-2 rounded-circle">
+                <div class="d-flex flex-column">
+                    <span class="title">Papa</span>
+                    <span class="comment text-muted">last seen today at 2:31 AM</span>
+                </div>
+            </div>
+            <div class="mx-auto row bannerText fa-1x w-20">
+                <span class="align-self-center d-flex mx-2"><i class="fas fa-video" aria-hidden="true"></i></span>
+                <span class="d-flex align-self-center"><i class="fas fa-phone mx-2" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- Create conversation thread section -->
+    <div class="container-fluid bg-light px-3" style="min-height: 100vmax; background-image: url('https://www.cleanavenuesrl.it/wp-content/themes/rockox/demo/images/restaurant_icons.png');">
+        <!-- Testing things here -->
+        <div class="row pt-2 px-2 pb-1 justify-content-start">
+            <div class="message p-2 shadow">
+                <span class="title">Gm</span>
+                <span class="timestamp text-muted p-1">7:01 AM</span>
+            </div>
+        </div>
+        <div class="row px-2 justify-content-start">
+            <div class="message p-2 shadow">
+                <span class="title">Where?</span>
+                <span class="timestamp text-muted p-1">7:01 AM</span>
+            </div>
+        </div>
+        <div class="row p-2 justify-content-end">
+            <div class="message p-2 shadow receiver">
+                <span class="title">Dining table</span>
+                <span class="timestamp text-muted p-1">7:01 AM</span>
+            </div>
+        </div>
+        <div class="row pt-2 px-2 pb-1 justify-content-start">
+            <div class="message p-2 shadow">
+                <span class="title">Exercise?</span>
+                <span class="timestamp text-muted p-1">7:01 AM</span>
+            </div>
+        </div>
+        <div class="row p-2 justify-content-end">
+            <div class="message p-2 shadow receiver">
+                <span class="title"><img width="64" alt="Approve icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Approve_icon.svg/64px-Approve_icon.svg.png" class="img-fluid"></span>
+                <span class="d-flex justify-content-center timestamp text-muted p-1">7:02 AM</span>
+            </div>
+        </div>
+        <div class="row pt-2 px-2 pb-1 justify-content-start">
+            <div class="message p-2 shadow">
+                <span class="title">Good</span>
+                <span class="timestamp text-muted p-1">7:02 AM</span>
+            </div>
+        </div>
+        <div class="row p-2 justify-content-end">
+            <div class="message p-2 shadow receiver">
+                <span class="title">Thanks</span>
+                <span class="timestamp text-muted p-1">7:02 AM</span>
+            </div>
+        </div>
+        <div class="row pt-2 px-2 pb-1 justify-content-start">
+            <div class="message p-2 shadow">
+                <span class="title">Sleeping again?</span>
+                <span class="timestamp text-muted p-1">7:03 AM</span>
+            </div>
+        </div>
+        <div class="row p-2 justify-content-end">
+            <div class="message p-2 shadow receiver">
+                <span class="title">Nope.</span>
+                <span class="timestamp text-muted p-1">7:04 AM</span>
+            </div>
+        </div>
+    </div>
+    <!--  Create chat footer -->
+    <footer>
+        <div class="container-fluid shadow-sm pb-1 fixed-bottom my-auto bg-white">
+            <div class="my-2 row">
+                <div class="d-flex align-self-center col-1 justify-content-center">
+                    <div class="btn btn-group dropup p-0">
+                        <i class="fas fa-plus fa-1x bannerText" data-toggle="dropdown"></i>
+                        <div class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <a class="dropdown-item" href="#"><i class="fas fa-camera fa-1x bannerText pr-2"></i>Camera</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-image fa-1x bannerText pr-2"></i>Photo &amp; Video Library</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-file fa-1x bannerText pr-2"></i>Document</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt fa-1x bannerText pr-2"></i>Location</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user-circle fa-1x bannerText pr-2"></i>Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 row" style="width: 80%;">
+                    <textarea class="form-control ml-1" rows="1" style="resize: inherit;"></textarea>
+                </div>
+                <div class="mx-auto row bannerText fa-1x w-20">
+                    <span class="align-self-center d-flex mx-2"><i class="fas fa-camera" aria-hidden="true"></i></span>
+                    <span class="d-flex align-self-center"><i class="fas fa-microphone mx-2" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+
+</html>

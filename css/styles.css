@@ -1,0 +1,120 @@
+html,
+body {
+    font-size: 14px;
+}
+
+a {
+    color: #8e24aa;
+}
+
+.material-icons {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.active {
+    color: #7C4DFF;
+}
+
+.bannerText {
+    color: #8e24aa;
+}
+
+.chevronText {
+    color: #9e9e9e;
+}
+
+.bannerBackground {
+    background-color: #8e24aa;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.comment,
+.time {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.divider {
+    width: 100%;
+    margin: 0.4rem 0 0 0;
+}
+
+.message {
+    border-radius: 6px 7px 8px 9px;
+    background-color: #fff;
+}
+
+.timestamp {
+    font-size: 0.7rem;
+}
+
+.receiver {
+    background-color: #dcf8c6;
+}
+
+@media (min-width: 768px) {
+    html,
+    body {
+        font-size: 16px;
+    }
+    /* No need of !important since it works as expected.
+    Tested this in firefox, chrome and safari. */
+    h2 {
+        text-align: center;
+    }
+
+    .fa-1x {
+        font-size: 1.8rem;
+    }
+}
+
+/* Referenced and credited to https://github.com/IanLunn/Hover */
+/* Buzz effect copied and modified */
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    color: #7C4DFF;
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
